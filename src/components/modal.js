@@ -7,7 +7,7 @@ const Modal = (props)=>{
             Pops is working
         </div>
         ,
-        document.querySelector("#modals")
+        document.querySelector("#modal")
     )
 }
 
