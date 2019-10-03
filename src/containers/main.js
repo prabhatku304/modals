@@ -1,5 +1,7 @@
 import React,{Component} from 'react';
 import Modal from '../components/modal';
+import {Route} from 'react-router-dom';
+import VideoStream from '../components/stream';
 
 class Main extends Component{
     constructor(props){
@@ -8,7 +10,11 @@ class Main extends Component{
 
     render(){
         return(
-            <Modal />
+           
+            <Switch>
+                <Route exact path="/modal" render={props=><Modal {...props}/>}/>
+                <Route exact path="/stream/:id" render={props=> <VideoStream {...props}/>} />
+            </Switch>
         )
     }
 }
