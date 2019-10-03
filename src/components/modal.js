@@ -4,13 +4,13 @@ import ReactDOM from 'react-dom';
 const Modal = (props)=>{
     return ReactDOM.createPortal(
         <div className="ui dimmer modals visible active ">
-            <div className="ui standard modal visible active">
+            <div onClick ={(e)=>e.stopPropagation()}className="ui standard modal visible active">
               
                     <div className="header">
                         Delete
                     </div>
                     <div className=" content">
-                       <p>hfhkkf jfkjkj</p> deleted succesfully
+                       deleted succesfully
                     </div>
            
             </div>
