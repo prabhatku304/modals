@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  user-select: none;
+  overflow: hidden;
+}
+header {
+  margin: 0 auto;
+  width: 431px
+}
+.header{
+  background: url('./assets/header.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  height: 60px;
+}
+h1 {
+  padding: 1.2rem 0;
+  margin: 0;
+}
+.score-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 6px;
+  background: #5EE270;
+}
+canvas{
+  display: initial !important;
+  height: 100vh;
+  height: calc(var(--vh, 1vh)*100);
+  min-height: -webkit-fill-available;
+  
+}
+@media only screen and (max-width: 600px) {
+  header {
+    margin: 0 auto;
+    width: 100%
+  }
+  canvas{
+    width: 100%;
+  }
+}
