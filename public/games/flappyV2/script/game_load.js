@@ -12,12 +12,4 @@ const onLoadGame = () => {
   document.body.appendChild(gameContainer);
 };
 
-const appHeight = () => {
-  const doc = document.documentElement;
-  let vh = Math.min(window.innerHeight, doc.clientHeight) * 0.01;
-  doc.style.setProperty("--vh", `${vh}px`);
-};
-window.addEventListener("resize", appHeight);
-appHeight();
-
 onLoadGame();

@@ -28,19 +28,11 @@ h1 {
   padding: 8px 6px;
   background: #5EE270;
 }
-canvas{
-  display: initial !important;
-  height: 100vh;
-  height: calc(var(--vh, 1vh)*100);
-  min-height: -webkit-fill-available;
-  
-}
+
 @media only screen and (max-width: 600px) {
   header {
     margin: 0 auto;
     width: 100%
   }
-  canvas{
-    width: 100%;
-  }
+ 
 }
