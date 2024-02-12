@@ -3,18 +3,18 @@ const ctx = canvas.getContext("2d");
 
 const imgBg = new Image();
 imgBg.src =
-  "https://cdn.jsdelivr.net/gh/prabhatku304/modals@master/public/games/flappy/assets/bg.png";
+  "https://cdn.jsdelivr.net/gh/prabhatku304/modals@master/public/games/flappyV2/assets/bg.png";
 const bird = new Image();
 bird.src =
-  "https://cdn.jsdelivr.net/gh/prabhatku304/modals@master/public/games/flappy/assets/bird.png";
+  "https://cdn.jsdelivr.net/gh/prabhatku304/modals@master/public/games/flappyV2/assets/bird.png";
 
 const topPipe = new Image();
 topPipe.src =
-  "https://cdn.jsdelivr.net/gh/prabhatku304/modals@master/public/games/flappy/assets/pipe.png";
+  "https://cdn.jsdelivr.net/gh/prabhatku304/modals@master/public/games/flappyV2/assets/pipe.png";
 
 const bottomPipe = new Image();
 bottomPipe.src =
-  "https://cdn.jsdelivr.net/gh/prabhatku304/modals@master/public/games/flappy/assets/pipe.png";
+  "https://cdn.jsdelivr.net/gh/prabhatku304/modals@master/public/games/flappyV2/assets/pipe.png";
 
 // general settings
 let gamePlaying = false;
