@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flappy Bird</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script/sdk.js"></script>
+    <script>
+      window.clickToPlay = 'Click to play'
+      const appHeight = () => {
+        const doc = document.documentElement;
+        let vh = Math.min(window.innerHeight, doc.clientHeight) * 0.01;
+        doc.style.setProperty("--vh", `${vh}px`);
+      };
+      window.addEventListener("resize", appHeight);
+      appHeight();
+     
+    </script>
+    <style>
+      .score-container{
+        position: absolute;
+        top: 10rem;
+        left:0;
+        right: 0;
+        font-size: 24px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body class="select-none touch-none">
+    <header class="hidden">
+      <div class="header"></div>
+    </header>
+    <div
+      id="currentScore"
+      class="text-center text-3xl absolute top-[10rem] left-0 right-0 score-container"
+    
+    ></div>
+    <canvas id="canvas" width="431" height="768"></canvas>
+  </body>
+  <script src="./script/game.js"></script>
+</html>
