@@ -2,11 +2,7 @@
 <html>
   <head>
     <title>Wheres The Puppy</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="media/graphics/misc/favicon.ico"
-    />
+   
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta
       name="viewport"
@@ -14,24 +10,29 @@
     />
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
-    <link rel="stylesheet" type="text/css" href="game.css?v=1662376602" />
-    <script type="text/javascript" src="game.js?v=1662376602"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/prabhatku304/modals@master/public/games/wheresThePuppy/game.css?v=1662376602" />
+    <script>
+      window.hasGameStarted = true;
+     window.cdnUrl =
+  "https://cdn.jsdelivr.net/gh/prabhatku304/modals@master/public/games/wheresThePuppy/";
+      window.addEventListener("message", (e) => {
+        if (e.data.type === "game_start") {
+          window.hasGameStarted = true;
+        }
+      });
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/prabhatku304/modals@master/public/games/wheresThePuppy/game.js"></script>
   </head>
-  <script>
-    window.hasGameStarted = false;
-    window.addEventListener("message", (e) => {
-      if (e.data.type === "game_start") {
-        window.hasGameStarted = true;
-      }
-    });
-  </script>
+ 
   <body>
+    <div>
     <div id="ajaxbar">
       <div id="game"><canvas id="canvas"></canvas></div>
       <div id="orientate">
-        <img src="media/graphics/orientate/landscape.jpg" />
+        <img src="https://cdn.jsdelivr.net/gh/prabhatku304/modals@master/public/games/wheresThePuppy/media/graphics/orientate/landscape.jpg" />
       </div>
       <div id="play" class="play" onclick=""></div>
     </div>
+  </div>
   </body>
 </html>
